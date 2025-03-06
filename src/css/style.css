@@ -1,0 +1,379 @@
+/* Definições globais */
+* {
+    box-sizing: border-box;
+    /* Inclui padding e bordas no tamanho total dos elementos */
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* Oculta a rolagem horizontal */
+    font-family: Akaya Telivigala;
+    background-color: #7523c4;
+}
+
+.akaya-telivigala-regular {
+    font-family: "Akaya Telivigala", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ibm-plex-sans-thin {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.title {
+    font-size: 50px;
+    color: #7523c4;
+}
+
+.info {
+    font-size: 16px;
+    font-family: IBM Plex Sans;
+}
+
+.header {
+    background: rgb(147, 10, 212);
+    background: linear-gradient(180deg, rgba(147, 10, 212, 1) 0%, rgba(191, 104, 232, 1) 35%, rgba(255, 255, 255, 1) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px;
+    /* Adiciona padding para evitar overflow */
+}
+
+header {
+    width: 100%;
+    /* Usa 100% em vez de 100vw */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-img {
+    max-width: 50%;
+    /* Limita a largura máxima para evitar overflow */
+}
+
+.header-img img {
+    height: 120px;
+    margin: 15px 30px 5px 0;
+}
+
+.header-text {
+    margin-right: 20px;
+    /* Ajusta margem direita */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-text nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7523c4;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #be51f8;
+}
+
+/*-----------------------------------------------*/
+.donator {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    /* Oculta overflow */
+    width: 100%;
+    /* Usa 100% em vez de 100vw */
+}
+
+.donator-image {
+    display: flex;
+    flex: 1;
+}
+
+.donator-image img {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.donator-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/*-----------------------------------------------*/
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    border: solid;
+    margin: 10px;
+    padding-top: 0;
+    background-color: #ffffff;
+}
+
+.aboutUs-text {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.aboutUs-image {
+    margin: 50px 0 50px 100px;
+    margin-right: 0;
+}
+
+.aboutUs-image img {
+    height: 400px;
+    border: solid;
+    border-color: #7523c4;
+}
+
+/*---------------------*/
+
+.impact {
+    display: flex;
+    align-items: center;
+    border: solid;
+    margin: 10px;
+    padding-top: 0;
+    background-color: #ffffff;
+}
+
+.impact-text {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.impact-image {
+    margin: 50px 0 50px 100px;
+    margin-right: 0;
+}
+
+.impact img {
+    height: 400px;
+    border: solid;
+    border-color: #7523c4;
+}
+
+/* ------------------------------ */
+
+.howToHelp {
+    background-color: #ffffff;
+    border: solid;
+    padding: 20px;
+}
+
+.howToHelp-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
+
+.howToHelp-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0 50px;
+}
+
+.cap {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.cap img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.cap h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sand {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.sand img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.sand h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.feed {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.feed img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.feed h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.pix {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.pix img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.pix h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mapa {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.lista-enderecos {
+    flex: 1;
+    max-height: 450px;
+    overflow-y: scroll;
+    border: 3px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+.lista-enderecos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-enderecos li {
+    padding: 10px 0;
+    border-bottom: 2px solid #be51f8;
+}
+
+.allPosts {
+    border: solid;
+    margin: 10px;
+    padding-top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    /* Ajuste para corresponder à largura da sua tela */
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    /* Distribui o espaço de forma uniforme */
+}
+
+
+.embed-instagram {
+    flex: 1 1 30%;
+    max-width: 30%;
+    height: 590px;
+    /* Ajuste a altura conforme necessário */
+    overflow: hidden;
+    border: 3px solid #ccc;
+    border-left:0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.footer {
+    background: rgb(147, 10, 212);
+    background: linear-gradient(0deg, rgba(147, 10, 212, 1) 0%, rgba(191, 104, 232, 1) 35%, rgba(255, 255, 255, 1) 80%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* Adiciona padding para evitar overflow */
+}
+
+
+.footer-logo {
+    max-width: 50%;
+    /* Limita a largura máxima para evitar overflow */
+}
+
+.footer-logo img {
+    height: 120px;
+    margin: 15px 30px 5px 0;
+}
+
+.footer-text {
+    /* Ajusta margem direita */
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-text .contact{
+    margin:40px;
+}
+.footer-text .location{
+    margin:40px;
+}
+.footer-text .socialMedia{
+    margin:40px;
+}
